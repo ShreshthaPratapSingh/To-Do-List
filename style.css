@@ -1,0 +1,207 @@
+body {
+  background-color: grey;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@keyframes TaskAnimation {
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+main {
+  display: flex;
+  gap: 10px;
+}
+
+.tdl {
+  border: 2px solid black;
+  width: 400px;
+  height: 480px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.img1 {
+  margin: 10px;
+  border: 1px solid rgba(53, 53, 182, 0.781);
+  border-radius: 20px;
+}
+
+.heading {
+  font-family: "Savate", sans-serif;
+  font-size: 22px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  top: -105px;
+  color: rgb(255, 255, 255);
+}
+.heading3 {
+  font-family: "Savate", sans-serif;
+  font-size: 22px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  top: -85px;
+  color: rgb(255, 255, 255);
+}
+
+.heading2 {
+  font-family: "Savate", sans-serif;
+  font-size: 15px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  top: -122px;
+  color: white;
+}
+
+.Task {
+  border: 2px solid blue;
+  border-radius: 10px;
+  height: 25px;
+  width: 200px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+
+.Task::placeholder {
+  font-family: "Savate", sans-serif;
+  color: white;
+}
+
+.data {
+  padding: 10px;
+  font-family: "Savate", sans-serif;
+  position: relative;
+  top: -105px;
+}
+
+.Task:focus {
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+
+.date {
+  border: 2px solid blue;
+  border-radius: 10px;
+  height: 25px;
+  width: 200px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-family: "Savate", sans-serif;
+}
+
+.date:focus {
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+.priority {
+  border: 2px solid blue;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Savate", sans-serif;
+  background-color: black;
+  color: white;
+}
+.priority:focus {
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+.button1 {
+  color: white;
+  background-color: green;
+  font-family: "Savate", sans-serif;
+  width: 380px;
+  font-size: 25px;
+  height: 45px;
+  cursor: pointer;
+}
+.button1:hover {
+  background-color: rgb(0, 61, 0);
+}
+.button2 {
+  color: white;
+  background-color: rgb(143, 108, 113);
+  font-family: "Savate", sans-serif;
+  width: 380px;
+  font-size: 25px;
+  height: 45px;
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: rgb(85, 64, 68);
+}
+.taskContainer {
+  font-family: "Savate", sans-serif;
+  position: relative;
+  top: -40px;
+  font-size: 15px;
+  margin-left: 10px;
+  border: 2px solid blue;
+  margin-right: 10px;
+  background-color: black;
+  animation: TaskAnimation 0.8s ease-out;
+}
+.dead {
+  margin-left: 21px;
+  color:  white;
+}
+.pri {
+  margin-left: 21px;
+  color: white;
+}
+.taskText{
+  color: white;
+}
+
+.tdl1{
+  border: 2px solid black;
+  width: 400px;
+  height: 480px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  overflow-y: auto;
+}
+.date::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+.delete{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    left: 164px;
+    top: -3px;
+    cursor: pointer;
+    font-family: "Savate", sans-serif;
+}
+.delete:hover{
+  background-color: rgb(119, 0, 0);
+}
+.GodContainer{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  position: relative;
+  top: 25vh;
+  
+}
+
